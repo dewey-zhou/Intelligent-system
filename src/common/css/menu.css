@@ -1,0 +1,268 @@
+
+/*底色*/
+.undertone{
+  position: absolute;
+  background:RGB(240,240,240);
+  width: 100%;
+  height: 100%;
+}
+/*右侧顶部导航条*/
+.nav4{
+  height: 50px;
+}
+.nav1{
+  /* padding-left:180px; */
+  margin-left: 180px;
+  padding-right: 180px;
+  width: 100%;
+  height:50px;
+  background:white;
+  position: fixed;
+  float: right;
+}
+/*左侧导航条*/
+.nav{
+  position: absolute;
+  left:0;
+  top:0;
+  background: #002141;
+  color: #ffffff;
+  height: 100%;
+  width: 180px;
+  /* 固定在页面中 */
+  /* position: fixed; */
+}
+/*foxconnlogo大小*/
+.logo{
+  width:100px;
+  height:40px ;
+}
+/*logo水平居中*/
+.center1{
+  margin:0,auto;
+}
+/*导航条内容*/
+/* a标签 */
+a {
+	    text-decoration: none;
+	}
+	/*正常的未被访问过的链接*/
+	a:link {
+	    text-decoration: none;
+		color: white;
+	}
+	/*已经访问过的链接*/
+	a:visited {
+	    text-decoration: none;
+		color: white;
+	}
+	/*鼠标划过(停留)的链接*/
+	a:hover {
+	    text-decoration: none;
+		color: RGB(31,119,225);
+	}
+	/* 正在点击的链接，鼠标在元素上按下还没有松开*/
+	a:active {
+	    text-decoration: none;
+		color: RGB(31,119,225);
+	}
+	/* 获得焦点的时候 鼠标松开时显示的颜色*/
+	a:focus {
+	    text-decoration: none;
+		color: RGB(31,119,225);
+	}
+/* li样式 */
+.nav li{
+  list-style-type:none;
+  margin-top: 20px;
+  color: white;
+}
+.nav ul{
+  padding-left: 30px;
+  font-size:12px;
+}
+/*选中部分颜色变化*/
+.changecolor{
+  color: RGB(31,119,225);
+}
+
+/*左边图标的样式*/
+.nav1 .spacingleft{
+  margin:15px;
+  float: left;
+  font-size:12px;
+  font-weight:bold;
+}
+/*图标放上去*/
+.nav1 .spacingleft:hover{
+  color: RGB(45,140,240);
+}
+/*右边图标的样式*/
+.nav1 .spacingright{
+  margin:15px 5px ;
+  float: right;
+  font-size:12px;
+}
+/*图标放上去*/
+.nav1 .spacingright:hover{
+  color: RGB(45,140,240);
+}
+/*右侧顶部第二个导航条*/
+.nav2{
+  margin-left:180px;
+  height: 30px;
+  display:flex;
+}
+/*箭头的样式*/
+.nav2 .arrowhead{
+  float: left;
+  width: 20px;
+  height: 30px;
+  background:white;
+  font-size: 12px;
+  margin:0px  0.5px;
+}
+.nav2 .sth{
+  margin-top: 9px;
+  margin-left:4px;
+}
+/*向右浮动*/
+.right{
+  float: right;
+}
+/*两边箭头夹着的中间部分*/
+.nav3{
+  float: left;
+  /*background: red;*/
+  width: 100%;
+  height: 100%;
+  box-shadow: darkgrey 10px 10px 5px -5px ;
+}
+/*按钮样式*/
+/* .btn{} */
+.btnset{
+  width: 50px;
+  height: 30px;
+  padding:0px;
+  background: RGB(45,140,240);
+  line-height: 15px;
+  color: white;
+}
+/* 鼠标移入变小手 */
+.mousechange{
+	cursor:pointer;
+}
+/*白色矩形的样式*/
+.contenttitle{
+  display: flex;
+  align-items: center;
+  margin:10px 20px 2px 190px;
+  background: white;
+  height: 50px;
+}
+
+.btntitle{
+	margin:2px 20px 2px 190px;
+	background: white;
+	height: 50px;
+	line-height: 50px;
+}
+/*标题字体样式*/
+.fontset{
+  font: normal bolder 20px/50px 微软雅黑;
+  
+}
+/* 非加粗字体样式 */
+.fontset1{
+  font: normal  20px/50px 微软雅黑;
+ 
+}
+
+/*按钮能选中*/
+.optional{
+  background:RGB(45,140,240);
+  color: white;
+}
+/*按钮不能选中*/
+.notoptional{
+  background:RGB(240,240,240);
+}
+
+/*内容区*/
+/*内容区域的样式  高度靠内容撑开*/
+.content{
+  margin:10px 20px 2px 190px;
+  background: white;
+  padding: 20px 40px 20px 0px ;
+}
+.content:after{
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  clear: left;
+}
+/*表格样式*/
+/* .table{} */
+/*表格边框*/
+.tableset{
+  float: left;
+  border: 1px solid RGB(240,240,240);
+  margin:0px 20px 0px 20px ;
+
+}
+.subtable{
+  width:30%;
+  padding:0px 45px 15px 0px;
+}
+.subtable2{
+  width:45%;
+  padding:0px 45px 15px 0px;
+}
+.navheight{
+  height:300px;
+}
+/*表格第一行*/
+.tablehead{
+  background:RGB(240,240,240) ;
+}
+/*时间输入框*/
+.timeblock{
+  height:50px;
+  margin:15px 10px 10px 210px;
+  display: flex;
+  /*实现垂直居中*/
+  align-items: center;
+}
+/*时间输入框的大小*/
+.timeinputbox{
+  width: 400px;
+  height: 30px;
+}
+/*时间输入框中左边间距*/
+.leftspacing{
+  margin-left:100px;
+}
+/*异常样式*/
+.imgsize{
+  width: 45px;
+  height: 25px;
+}
+/* 浮动 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.clearf::before,.clearf::after{
+  content :'';
+	display: block;
+	clear:both;
+}
+/*异常样式*/
+.imgsize{
+  width: 45px;
+  height: 25px;
+}
