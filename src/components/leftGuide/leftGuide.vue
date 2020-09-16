@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
     <div class="center1">
-      <img src="./img/logo.jpg" class="logo center-block" />
+      <img src="./img/logo.jpg" class="logo" />
     </div>
     <ul>
       <li>
@@ -47,10 +47,17 @@ export default {
   height: 100%;
   width: 180px;
 }
+/*logo水平居中*/
+.center1{
+  position: relative;
+  /* overflow: hidden; */
+}
 /*foxconnlogo大小*/
 .logo{
+  position: absolute;
   width:100px;
   height:40px ;
+  left: 40px;
 }
 .nav li{
   list-style-type:none;
@@ -60,6 +67,7 @@ export default {
 .nav ul{
   padding-left: 30px;
   font-size:12px;
+  margin-top: 60px;
 }
 ul li span{
   cursor: pointer;

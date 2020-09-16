@@ -2,22 +2,22 @@
 <div class="header">
   <div class="nav1">
         <!--left-->
-        <div class="spacingleft"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+        <div class="spacingleft"><i class="el-icon-menu"></i></div>
         <div class="spacingleft">首页</div>
         <!--right-->
-        <div class="spacingright">admin <span class=" caret"></span></div>
-        <div class="spacingright"><span class="glyphicon glyphicon-bell"></span></div>
-        <div class="spacingright"><span class="glyphicon glyphicon-cog"></span><span class=" caret"></span></div>
-        <div class="spacingright"><span class="glyphicon glyphicon-fullscreen"></span></div>
+        <div class="spacingright">admin <i class="el-icon-caret-bottom"></i></div>
+        <div class="spacingright"><i class="el-icon-message-solid"></i></div>
+        <div class="spacingright"><i class="el-icon-setting"></i><i class="el-icon-caret-bottom"></i></div>
+        <div class="spacingright"><i class="el-icon-full-screen"></i></div>
   </div>
   <div class="nav2">
   <!--left-->
-  <div class="arrowhead"><span class="glyphicon glyphicon-menu-left sth"></span></div>
+  <div class="arrowhead"><i class="el-icon-arrow-left"></i></div>
     <!--中间-->
     <div class="nav3"></div>
     <!--right-->
-    <div class="arrowhead right"><span class="glyphicon glyphicon-remove-circle sth"></span></div>
-    <div class="arrowhead right"><span class="glyphicon glyphicon-menu-right sth"></span></div>
+    <div class="arrowhead right"><i class="el-icon-circle-close"></i></div>
+    <div class="arrowhead right"><i class="el-icon-arrow-right"></i></div>
   </div>
 </div>
 </template>
@@ -28,7 +28,6 @@ export default {
 </script>
 
 <style >
-@import url('../../common/bootstrap-3.3.7-dist/css/bootstrap.min');
 .header{
 position:fixed;
 top: 0;
@@ -72,7 +71,7 @@ right: 0;
   width: 20px;
   height: 30px;
   background:white;
-  font-size: 12px;
+  font-size: 19px;
   margin:0px  0.5px;
 }
 .nav2 .sth{
