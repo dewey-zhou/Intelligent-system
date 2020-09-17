@@ -33,10 +33,11 @@ position:fixed;
 top: 0;
 left: 180px;
 right: 0;
+z-index: 1;
 }
 .nav1{
   overflow:hidden;
- background-color: white;
+  background-color: white;
 }
 .nav1 div{
   cursor: pointer;
@@ -73,6 +74,7 @@ right: 0;
   background:white;
   font-size: 19px;
   margin:0px  0.5px;
+  cursor: pointer;
 }
 .nav2 .sth{
   margin-top: 9px;

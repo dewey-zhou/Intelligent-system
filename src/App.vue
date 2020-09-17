@@ -30,6 +30,7 @@ export default {
 .leftContent{
   margin-top: 85px;
   margin-left: 180px;
+  z-index: -1;
 }
 .content{
   margin-top: 5px;
