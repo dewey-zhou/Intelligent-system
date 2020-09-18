@@ -7,43 +7,77 @@ import errorAnticipationAccuracy from '../pages/errorAnticipationAccuracy/errorA
 import errorAnticipationImitate from '../pages/errorAnticipationImitate/errorAnticipationImitate.vue'
 import errorClassify from '../pages/errorClassify/errorClassify.vue'
 import systemEstimate from '../pages/systemEstimate/systemEstimate.vue'
-
+import login from '../pages/login/login.vue'
+import text from '../pages/text/text.vue'
 // 声明使用插件
 Vue.use(VueRouter)
 export default new VueRouter({
+  mode: 'history',
   // 所有路由
   routes: [
     {
       path: '/index',
-      component: index
+      component: index,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/analysiserrordata',
-      component: analysisErrorData
+      component: analysisErrorData,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/compareerrordata',
-      component: compareErrorData
+      component: compareErrorData,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/erroranticipationaccuracy',
-      component: errorAnticipationAccuracy
+      component: errorAnticipationAccuracy,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/erroranticipationimitate',
-      component: errorAnticipationImitate
+      component: errorAnticipationImitate,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/errorclassify',
-      component: errorClassify
+      component: errorClassify,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/systemestimate',
-      component: systemEstimate
+      component: systemEstimate,
+      meta: {
+        showFooter: true
+      }
     },
     {
       path: '/',
-      component: index
+      component: index,
+      meta: {
+        showFooter: true
+      }
+    },
+    {
+      path: '/login',
+      component: login
+    },
+    {
+      path: '/text',
+      component: text
     }
   ]
 })

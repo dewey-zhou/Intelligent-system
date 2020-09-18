@@ -1,9 +1,9 @@
 <template>
   <div class="undertone">
-    <leftGuide/>
-    <headerComponent/>
+    <leftGuide v-show="$route.meta.showFooter" />
+    <headerComponent v-show="$route.meta.showFooter" />
     <div class="leftContent">
-      <router-view class=""></router-view>
+      <router-view ></router-view>
     </div>
   </div>
 </template>

@@ -5,7 +5,7 @@
         <div class="spacingleft"><i class="el-icon-menu"></i></div>
         <div class="spacingleft">首页</div>
         <!--right-->
-        <div class="spacingright">admin <i class="el-icon-caret-bottom"></i></div>
+        <div class="spacingright" @click="goTo('/login')">admin <i class="el-icon-caret-bottom"></i></div>
         <div class="spacingright"><i class="el-icon-message-solid"></i></div>
         <div class="spacingright"><i class="el-icon-setting"></i><i class="el-icon-caret-bottom"></i></div>
         <div class="spacingright"><i class="el-icon-full-screen"></i></div>
@@ -24,6 +24,11 @@
 
 <script>
 export default {
+  methods: {
+    goTo (path) {
+      this.$router.push(path)
+    }
+  }
 }
 </script>
 
