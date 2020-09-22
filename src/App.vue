@@ -11,8 +11,12 @@
 <script>
 import leftGuide from './components/leftGuide/leftGuide'
 import headerComponent from './components/headerComponent/headerComponent'
-
+import {reqPicture} from './api/index'
 export default {
+  async mounted () {
+    const picture = await reqPicture()
+    console.log(picture)
+  },
   components: {
     leftGuide,
     headerComponent
