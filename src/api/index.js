@@ -8,7 +8,7 @@ import ajax from './ajax'
 const BASE_URL = '/api'
 
 // 1、获取机台信息
-export const reqMachine = () => ajax(BASE_URL + '/machine')
+export const reqMachines = () => ajax(BASE_URL + '/machine')
 // 2.获取故障原因
 export const reqReason = () => ajax(BASE_URL + '/reason')
 // 1、获取机台信息
